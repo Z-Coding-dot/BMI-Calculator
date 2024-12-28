@@ -1,0 +1,95 @@
+body {
+  background: url(18.jpg) no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  background-size: cover;
+  color: #fff;
+}
+.home-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.home-section h1 {
+  font-size: 3rem;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+.home-section p {
+  font-size: 1.5rem;
+  margin-bottom: 100px;
+}
+#bmiForm input {
+  border-radius: 40px;
+  background: transparent;
+  color: #fff;
+  font-size: 20px;
+}
+#bmiForm input::placeholder {
+  color: #fff;
+}
+#bmiForm select {
+  border-radius: 40px;
+  background: transparent;
+  color: #fff;
+  font-size: 20px;
+}
+#bmiForm select option {
+  background: transparent;
+  color: #151414;
+}
+
+#buttons {
+  position: relative;
+  background-color: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+  border: 2px solid #fff;
+  z-index: 1;
+  overflow: hidden;
+}
+
+#buttons::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #030405;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+#buttons:hover::before {
+  width: 100%;
+}
+
+#buttons:hover {
+  color: #00ffff;
+}
+
+.bmi-container {
+  background: transparent;
+  border: 2px solid rgba(17, 139, 139, 0.893);
+  backdrop-filter: blur(20px);
+  border-radius: 15px;
+  padding: 30px 40px;
+  box-shadow: 10px 10px 10px rgb(54, 79, 76);
+}
+.bmi-container {
+  max-width: 100%;
+}
+@media (min-width: 992px) {
+  .bmi-container {
+    max-width: 700px;
+  }
+}
+
+.bmi-container:hover {
+  box-shadow: 0 4px 8px rgb(39, 124, 158);
+}
