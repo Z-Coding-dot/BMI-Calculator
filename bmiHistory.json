@@ -1,3 +1,13 @@
 [
-  
+  {
+    "name": "Hakim",
+    "weight": "55",
+    "height": "148",
+    "age": "14",
+    "gender": "male",
+    "unit": "metric",
+    "bmi": "25.11",
+    "interpretation": "Overweight",
+    "timestamp": "12/28/2024, 4:11:08 PM"
+  }
 ]
